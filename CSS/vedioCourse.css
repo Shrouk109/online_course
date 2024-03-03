@@ -1,0 +1,672 @@
+:root {
+  --main-color: #FFFFFF;
+  --second-color:#ffab5e;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family:"Poppins" , sans-serif; */
+  font-family: "Open Sans" , sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+*::selection{
+  background-color: #fab700;
+  color: black;
+}
+.navbar{
+  height: 55px;
+  border-bottom: 1px solid #e2e7ed;
+  background-color: var(--main-color);
+  position: fixed;
+  width: 100%;
+}
+.navbar img{
+  width: 60px;
+  padding-left: 15px;
+  padding-top: 5px;
+  user-select: none;
+}
+.navbar .next_lesson{
+  float: right;
+  margin-right: 200px;
+  margin-top: 18px;
+  color: var(--second-color);
+  transition: 0.5s;
+}
+.navbar .next_lesson:hover i{
+  color: #f7be88;
+}
+.navbar .next_lesson:hover{
+  color: #f7be88;
+}
+.navbar .next_lesson i{
+  margin-left: 80px;
+  font-size: 13px;
+  transition: 0.5s;
+}
+.navbar .next_lesson span{
+  font-size: 12px;
+  font-weight: bold;
+}
+/* .sidebar{
+  position: fixed;
+  left:0;
+  width: 300px;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: all 0.5s ease;
+  margin-top: 1px;
+  border-right: 1px solid #e2e7ed;
+  z-index: 999;
+}
+#check{
+  display: none;
+}
+label #btn , label #close{
+  position: absolute;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 10px;
+  font-size: 35px;
+  transition: all 0.5s;
+  display: none;
+}
+label #close{
+  z-index: 1111;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  background-color:#ffab5e;
+  border-radius:50%;
+  padding: 3px 5px;
+  color: var(--main-color);
+  left: 285px;
+  top: 80px;
+}
+label #close:hover{
+  cursor: pointer;
+  background-color:#feb978;
+}
+#check:checked ~ .sidebar{
+  left: -240px;
+}
+
+#check:checked ~ label #close{
+  left: 45px;
+  top: 80px;
+} */
+/* ======================= */
+#check{
+  display: none;
+}
+.sidebar {
+  /* position: fixed;
+  top: 0;
+  left: -240px;
+  width: 240px;
+  height: 100%;
+  background-color: #f1f1f1;
+  transition: left 0.5s ease; */
+  position: fixed;
+  left:0;
+  width: 300px;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: all 0.5s ease;
+  margin-top: 1px;
+  border-right: 1px solid #e2e7ed;
+  margin-top: 54px;
+}
+.main {
+  /* margin-left: 0;
+  transition: margin-left 0.5s ease; */
+  padding-top: 70px;
+}
+.container {
+  /* margin-left: 0;
+  transition: margin-left 0.5s ease; */
+  margin-left: 20px;
+  margin-right: 65px;
+  transition: margin-left 0.5s ease;
+}
+#check:checked ~ .main .container {
+  margin-left: 140px;
+}
+#check:checked ~ .sidebar{
+  left:-240px;
+}
+#btn,
+#close {
+  position: absolute;
+  cursor: pointer;
+}
+#btn {
+  left: 40px;
+  top: 10px;
+  font-size: 35px;
+  transition: all 0.5s;
+  display: none;
+}
+#close {
+  z-index: 1111;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  background-color:#ffab5e;
+  border-radius:50%;
+  padding: 3px 5px;
+  color: var(--main-color);
+  left: 285px;
+  top: 80px;
+  position: fixed;
+}
+#check:checked ~ #close{
+  left: 45px;
+  top: 80px;
+}
+/* ============== */
+.sidebar header{
+  padding:  25px 0 25px 18px;
+  background-color: #ffab5e;
+}
+.sidebar header a{
+  color: var(--main-color);
+}
+.sidebar header a i{
+  margin-right: 5px;
+}
+.sidebar header a span{
+  font-weight: bold;
+  font-size: 15px;
+}
+.sidebar .content{
+  padding:  15px 0 15px 18px;
+  border-bottom: 1px solid #e2e7ed;
+}
+.sidebar .content a.name1{
+  color: #ffab5e;
+}
+.sidebar .content a.name1 i{
+  margin-right: 5px
+}
+.sidebar .content a.name2{
+  color:#495255;
+  transition: 0.4s;
+  font-size: 12px;
+}
+.sidebar .content a.name2:hover{
+  color: #ffab5e;
+}
+.sidebar .content a.name2 i{
+  border: 2px solid #e2e7ed;
+  color: #e2e7ed;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.sidebar .content a i{
+  font-size: 14px;
+}
+.sidebar .content a.name1 span{
+  font-weight: bold;
+  font-size: 12px;
+}
+.sidebar .content .numTopic{
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffab5e;
+  transition: 0.5s;
+}
+.sidebar .content .numTopic i{
+  background-color: #ffab5e;
+  color:var(--main-color);
+  border-radius: 50%;
+  padding: 2px 2px;
+  font-size: 12px;
+  transition: 0.5s;
+}
+.sidebar .content .numTopic:hover{
+  color:#fcc088ed ;
+}
+.sidebar .content .numTopic:hover i{
+  background-color:#fcc088ed ;
+}
+/* content */
+.main{
+  padding-top: 70px;
+}
+.container{
+  margin-left: 360px;
+  margin-right: 65px;
+}
+.main .container iframe{
+  width: 100%;
+  height: 80vh;
+  border: none;
+}
+.main .container h1{
+  font-weight:700;
+  font-size: 70px;
+}
+.main .container .name_vedio{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f3f6;
+  padding: 10px 15px;
+  border-radius: 5px
+}
+.main .container .name_vedio span a{
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffab5e;
+}
+.main .container .name_vedio i{
+  font-size: 12px;
+  font-weight: bold;
+}
+.main .container .line{
+  margin-bottom: 13px;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-right: 20px;
+}
+.main .container .lesson-content{
+  border:2px solid #e2e7ed;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.main .container .lesson-content .header {
+  margin-bottom: 20px;
+  background-color: #ffab5e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius:7px 7px 0 0 ;
+}
+.main .container .lesson-content .header span{
+  font-size: 13px;
+  font-weight: bold;
+}
+.main .container .lesson-content .header i{
+  margin-left: 30px;
+  font-size: 17px;
+  margin-right: 5px;
+}
+.main .container .lesson-content .header span{
+  float: right;
+  margin-right: 30px;
+}
+.cont1  ,.cont2{
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #333333;
+}
+.cont1{
+  border-bottom: 1px solid #e2e7ed;
+  padding-bottom: 20px;
+  margin-right: 30px;
+}
+.cont1 a{
+  transition: 0.3s;
+}
+.cont1:hover a{
+  color: #fab700;
+}
+.cont2 a{
+  transition: 0.3s;
+}
+.cont2:hover a{
+  color: #fab700;
+}
+.cont1 i ,.cont2 i{
+  border: 2px solid #e2e7ed;
+  color: #e2e7ed;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-right: 5px;
+}
+hr{
+  border: 1px solid #e2e7ed;
+  margin-bottom: 20px;
+}
+.last{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.main .container .last .back a{
+  color: #ffab5e;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.main .container .last .back:hover a{
+  color: #f7be88;
+  cursor: pointer;
+}
+.main .container .last button{
+  border: none;
+  padding: 10px 20px;
+  background-color: #ffab5e;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.main .container .last button:hover{
+  background-color: #f7be88;
+}
+.main .container .last button a{
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: bold;
+}
+.main .container .last button a i{
+  font-size: 12px;
+  margin-left: 5px;
+}
+/* media query */
+@media (min-width: 1000px){
+  .navbar .next_lesson {
+    margin-right: 70px;
+  }
+  .main .container iframe{
+    height: 65vh;
+  }
+  .container{
+    margin-left: 330px;
+    margin-right: 40px;
+    transition:  margin-left 0.5s ease;
+  }
+  #check:checked ~ .main .container{
+    margin-left: 110px;
+  }
+}
+@media (min-width: 920px) and (max-width: 1000px){
+  .main .container .line{
+    font-size: 14px;
+  }
+  .navbar .next_lesson {
+    margin-right: 70px;
+  }
+  .main .container iframe{
+    height: 50vh;
+  }
+  .container{
+    margin-left: 330px;
+    margin-right: 30px;
+    transition:  margin-left 0.5s ease;
+  }
+  #check:checked ~ .main .container{
+    margin-left: 90px;
+  }
+}
+@media (min-width: 770px) and (max-width: 920px){
+  .main .container .line{
+    font-size: 13px;
+  }
+  .navbar .next_lesson {
+    margin-right: 70px;
+  }
+  .main .container iframe{
+    height: 50vh;
+  }
+  .main .container h1{
+    font-size: 40px;
+  }
+  .container{
+    margin-left: 330px;
+    margin-right: 30px;
+    transition:  margin-left 0.5s ease;
+  }
+  #check:checked ~ .main .container{
+    margin-left: 90px;
+  }
+}
+@media (max-width: 770px){
+  body{
+    overflow-x:hidden ;
+  }
+  .main .container .line{
+    font-size: 12px;
+  }
+  .main .container iframe{
+    height: 50vh;
+  }
+  .main .container h1{
+    font-size: 40px;
+  }
+  .navbar .next_lesson {
+    margin-right: 70px;
+  }
+  .cont1 , .cont2{
+    font-size: 12px;
+  }
+  .last .back a{
+    font-size: 13px;
+  }
+  .navbar img{
+    display: none;
+  }
+  .navbar{
+    top: 0;
+  }
+  .sidebar{
+    top:-53px;
+    left: -300px;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ .sidebar{
+    z-index: 99999999;
+    top:-53px;
+    left:0;
+  }
+  #close{
+    left: -45px;
+    top: 20px;
+  }
+  #check:checked ~ #close{
+    left: 285px;
+    top: 20px;
+    z-index: 11111111111;
+  }
+  .container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #check:checked ~ .main .container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #btn{
+    display:block;
+    position:relative ;
+    left: 30px;
+    top: 2px;
+    z-index: 111111;
+    position: fixed;
+  }
+}
+@media(max-width: 500px){
+  body{
+    overflow-x:hidden ;
+  }
+  .main .container .line{
+    font-size: 12px;
+  }
+  .main .container h1{
+    font-size: 25px;
+  }
+  .main .container iframe{
+    height: 50vh;
+  }
+  .navbar .next_lesson {
+    margin-right: 20px;
+  }
+  .navbar .next_lesson i{
+    margin-left: 2px;
+  }
+  .cont1 , .cont2{
+    font-size: 12px;
+  }
+  .last .back a{
+    font-size: 13px;
+  }
+  .navbar img{
+    display: none;
+  }
+  .navbar{
+    top: 0;
+  }
+  .sidebar{
+    top:-53px;
+    left: -300px;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ .sidebar{
+    z-index: 99999999;
+    top:-53px;
+    left:0;
+  }
+  #close{
+    left: -45px;
+    top: 20px;
+  }
+  #check:checked ~ #close{
+    left: 285px;
+    top: 20px;
+    z-index: 11111111111;
+  }
+  .container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #check:checked ~ .main .container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #btn{
+    display:block;
+    position:relative ;
+    left: 30px;
+    top: 5px;
+    z-index: 111111;
+    position: fixed;
+    font-size: 30px;
+  }
+  .main .container .lesson-content .header {
+    font-size: 12px;
+    
+  }
+  .main .container .lesson-content .header span{
+    font-size: 11px;
+    margin-left: 20px;
+  }
+  .last{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .last .back{
+    margin-bottom: 10px;
+  }
+  .main .container .name_vedio span a{
+    font-size: 10px;
+  }
+}
+@media(max-width: 420px){
+  body{
+    overflow-x:hidden ;
+  }
+  .main .container .line{
+    font-size: 12px;
+  }
+  .main .container h1{
+    font-size: 25px;
+  }
+  .main .container iframe{
+    height: 50vh;
+  }
+  .navbar .next_lesson {
+    margin-right: 20px;
+  }
+  .navbar .next_lesson i{
+    margin-left: 2px;
+  }
+  .cont1 , .cont2{
+    font-size: 12px;
+  }
+  .last .back a{
+    font-size: 13px;
+  }
+  .navbar img{
+    display: none;
+  }
+  .navbar{
+    top: 0;
+  }
+  .sidebar{
+    top:-53px;
+    left: -300px;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ .sidebar{
+    z-index: 99999999;
+    top:-53px;
+    left:0;
+    width:200px;
+  }
+  .sidebar header .name-course span ,.sidebar header .name-course i {
+    font-size: 12px;
+  }
+  #close{
+    left: -45px;
+    top: 20px;
+  }
+  #check:checked ~ #close{
+    left: 186px;
+    top: 20px;
+    z-index: 11111111111;
+  }
+  .sidebar .content .name2 span{
+    font-size: 10px;
+  }
+  .container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #check:checked ~ .main .container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #btn{
+    display:block;
+    position:relative ;
+    left: 30px;
+    top: 5px;
+    z-index: 111111;
+    position: fixed;
+    font-size: 30px;
+  }
+  .main .container .lesson-content .header {
+    font-size: 12px;
+  }
+  .main .container .lesson-content .header span{
+    font-size: 11px;
+    margin-left: 20px;
+  }
+  .last{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .last .back{
+    margin-bottom: 10px;
+  }
+  .main .container .name_vedio span a{
+    font-size: 10px;
+  }
+}

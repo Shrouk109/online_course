@@ -1,0 +1,1195 @@
+:root {
+  --main-color: #FFFFFF;
+  --second-color:#ff9635;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family:"Poppins" , sans-serif; */
+  font-family: "Open Sans" , sans-serif;
+  text-decoration: none;
+}
+body{
+  background-color: #ecf0f2;
+  overflow-x: hidden;
+}
+*::selection{
+  background-color: #fab700;
+  color: black;
+}
+/* start navbar */
+.page1{
+  background-color: var(--main-color);
+  height: 70px;
+}
+.container{
+  margin-left:100px;
+  margin-right: 100px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+.navbar i{
+  display: none;
+}
+.logo img{
+  margin-top: 13px;
+  width: 130px;
+}
+.navbar .links ul{
+  display: flex;
+  margin-left: 120px;
+  list-style: none;
+}
+.navbar .links ul li{
+  font-family: "Open Sans" , sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  padding: 13px 14px;
+}
+.navbar .links ul li a{
+  color: var(--second-color);
+}
+.navbar .btn{
+  color:var(--main-color);
+  text-transform: uppercase;
+  border-radius:100px ;
+  border: none;
+  margin-top: 11px;
+  margin-left: -80px;
+  padding: 9px 15px;
+  width: 180px;
+  background-color:var(--second-color) ;
+  font-weight: 600;
+  line-height: 1rem;
+  transition: 0.5s;
+}
+.navbar .btn:hover{
+  background-color: #376fa0;
+  cursor: pointer;
+}
+.navbar .btn a{
+  color:var(--main-color);
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+/* details */
+.details {
+  margin-left: 145px;
+  margin-right: 145px;
+  margin-top: 50px;
+  background-color: var(--main-color);
+  height: 100%;
+}
+.details .container{
+  margin-left: 10px;
+  padding-bottom: 60px;
+}
+.details .container img{
+  width: 900px;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+}
+.details .container .name_course{
+  margin-left: 80px;
+  margin-bottom: 15px;
+  font-size:20px;
+  font-weight: 600;
+  color: #22323D;
+}
+.details .container .course_description{
+  margin-left: 80px;
+}
+.details .container .course_description h2{
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #22323D;
+}
+.details .container .course_description .para1 , .details .container .course_description .para2{
+  margin-bottom: 10px;
+  margin-right: 50px;
+  color: #22323d;
+  font-size: 15px;
+  line-height: 20px;
+}
+.details .container .key_concept{
+  margin-left: 80px;
+}
+.details .container .key_concept h3{
+  font-size: 26px;
+  font-weight:700;
+  margin-bottom: 20px;
+  color: #22323D;
+}
+.details .container .key_concept ul{
+  margin-left: 50px;
+}
+.details .container .key_concept ul li{
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.details .container .risus{
+  margin-left: 80px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.details .container .course_content{
+  margin: 0 20px 20px 80px;
+} 
+.details .container .course_content .head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.details .container .course_content .head h4{
+  font-size: 23px;
+  color: #22323D;
+}
+.details .container .course_content .head button{
+  border: none;
+  background-color:#ffab5e;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: var(--main-color);
+  transition: 0.3s;
+  font-size: 11px;
+  font-weight: bold;
+}
+.details .container .course_content .head button:hover{
+  cursor: pointer;
+  background-color:#feb978;
+}
+.details .container .course_content .head button i{
+  padding-right:6px;
+}
+.details .container .course_content .content1 , .details .container .course_content .content2{
+  border: 2px solid  #e2e7ed;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.details .container .course_content .content1 button , .details .container .course_content .content2 button{
+  float: right;
+  margin-top: 10px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  font-size: 11px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.details .container .course_content .content1 button:hover , .details .container .course_content .content2 button:hover {
+  cursor: pointer;
+  color:#feb978;
+}
+.details .container .course_content .content1 button:hover i, .details .container .course_content .content2 button:hover i{
+  background-color:#feb978 ;
+}
+.details .container .course_content .content1 button i, .details .container .course_content .content2 button i{
+  background-color: var(--second-color);
+  color: var(--main-color);
+  border-radius: 50%;
+  padding: 2px;
+  transition: 0.4s;
+}
+.details .container .course_content .content1 a , .details .container .course_content .content2 a{
+  color: #22323D;
+  transition: 0.5s;
+}
+.details .container .course_content .content1 a:hover span, .details .container .course_content .content2 a:hover span{
+  color: var(--second-color);
+}
+.details .container .course_content .content1 a span, .details .container .course_content .content2 a span{
+  font-size:15px ;
+  margin-left: 5px;
+  color:#495255;
+  transition: 0.5s;
+}
+.details .container .course_content .content1 a i, .details .container .course_content .content2 a i{
+  border: 3px solid #e2e7ed;
+  color:#e2e7ed ;
+  border-radius:50% ;
+}
+.details .container .course_content .content1 .numTopic ,.details .container .course_content .content2 .numTopic{
+  padding-left: 40px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #728188;
+}
+
+/* email address */
+.emailAddress{
+  background-color: #e1e7eb;
+  height: 290px;
+  text-align: center;
+  margin-top: 90px;
+}
+.emailAddress h2{
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.emailAddress p{
+  color: #22323D;
+  font-weight:lighter ;
+  margin-bottom: 25px;
+}
+.emailAddress input{
+  height: 40px;
+  width: 300px;
+  border: none;
+  padding: 10px;
+}
+.emailAddress input:focus{
+  border: 1px dotted #22323d;
+  outline: none;
+}
+.emailAddress button{
+  margin-left: 10px;
+  border: none;
+  background-color: var(--second-color);
+  padding: 12px;
+  border-radius: 30px;
+  width: 140px;
+  color: var(--main-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.emailAddress button:hover{
+  background-color: #376fa0;
+}
+/* footer */
+footer{
+  background-color: var(--main-color);
+  height: 350px;
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+footer .container .sec1{
+  width: 500px;
+  font-size: 15px;
+  margin-left: 45px;
+  display: block;
+}
+footer .sec1 img{
+  height: 60px;
+}
+footer .container .sec1 p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:#22323d;
+}
+footer .container .sec1 i{
+  color: black;
+  padding-right: 9px;
+}
+footer .container .sec1 i:hover{
+  color: var(--second-color);
+}
+footer .container .sec2{
+  display: block;
+}
+footer .sec2 .links{
+  display: flex;
+  flex-direction: column;
+}
+footer h3{
+  margin-bottom: 18px;
+}
+footer .sec2 .links a{
+margin-bottom: 5px;
+color: #22323d;
+}
+footer .sec2 .links a:hover{
+  color: #428bca;
+}
+footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 6px;
+  font-size: 17px;
+}
+hr{
+  margin-top: 10px;
+  border: 1px solid  #e7e7e7;
+}
+footer section{
+  background-color: var(--main-color);
+  display: inline;
+}
+footer .finish{
+  margin-left: 145px;
+  margin-top: 45px;
+  margin-right: 145px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #22323d;
+}
+/* media query */
+@media(min-width: 1100px) and ( max-width:1288px){
+  .page1 .container , footer .container{
+    margin-left: 5px;
+    margin-right: 30px;
+  }
+  .links ul {
+    width: 600px;
+  }
+  .links ul li a{
+    text-wrap: nowrap;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 100px;
+  }
+  footer .container {
+    margin-left: -20px;
+  }
+  /* details */
+  .details{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .details .container img{
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 60px;
+  }
+  .details .container .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+    margin-left: 45px
+  }
+  footer .container .sec3{
+    margin-right: 20px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+@media(min-width: 1026px) and ( max-width:1100px){
+  .page1 .container , footer .container{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .links ul {
+    width: 650px;
+  }
+  .links ul li a{
+    text-wrap: nowrap;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 90px;
+  }
+  /* details */
+  .details{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .details .container img{
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 60px;
+  }
+  .details .container .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+    margin-left: 45px
+  }
+  footer .sec1{
+    max-width: 350px;
+  }
+  footer .sec3{
+    margin-right: 20px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+@media(min-width: 885px) and ( max-width:1026px){
+  .page1 .container ,footer .container{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .navbar .logo{
+    width: 80px;
+    position: relative;
+    left: 10px;
+  }
+  .page1 .container .navbar{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  nav .links ul {
+    width: 600px;
+    position: relative;
+    left: -10px;
+  }
+  nav .links ul li a{
+    text-wrap: nowrap;
+    font-size: 12px;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 80px;
+    text-wrap: nowrap;
+    position: relative;
+    left: -10px;
+  }
+  /* details */
+  .details{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .details .container img{
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 60px;
+  }
+  .details .container .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+    margin-left: 45px;
+    width: 100%;
+  }
+  footer .container{
+    margin-left: -30px;
+    height: 350px;
+  }
+  footer .sec1{
+    max-width: 300px;
+  }
+  footer .sec1{
+    width: 370px;
+  }
+  footer .sec3{
+    margin-right: 20px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+@media(min-width: 750px) and ( max-width:885px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  nav{
+    width: 50%;
+  }
+  .logo{
+    position: relative;
+    left: 150px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: -130px;
+    margin-left: -20px;
+  }
+  /* details */
+  .details{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .details .container{
+    margin-right: 70px;
+  }
+  .details .container img{
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  .details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .risus{
+    font-size: 14px;
+  }
+  .details .container .course_description h2 ,.details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .key_concept h3 ,.details .container .course_content .head , .course_content .content1, .course_content .content2 {
+  margin-left: -15px;
+  }
+  .details .container  .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+    margin-left: 45px;
+    width: 100%;
+  }
+  footer .container{
+    margin-left: -30px;
+    height: 300px;
+  }
+  footer .sec1{
+    max-width: 300px;
+    text-wrap: wrap;
+  }
+  footer .sec2 , footer .sec1{
+    margin-right: 70px;
+  }
+  footer .sec2 .links{
+    text-wrap: nowrap;
+  }
+  footer .sec2 h3 , footer .sec3 h3{
+    font-size: 16px;
+    text-wrap: nowrap;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 600px) and ( max-width:750px){
+  /* body{
+    overflow-x: hidden;
+  } */
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 90px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 100px;
+  }
+    /* details */
+    .details{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .details .container{
+      margin-right: 70px;
+    }
+    .details .container img{
+      width: 100%;
+      margin-left: 30px;
+      margin-top: 40px;
+    }
+    .details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .risus{
+      font-size: 14px;
+    }
+    .details .container .name_course, .details .container .course_description h2 ,.details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .key_concept h3 , .details .container .risus , .details .container .course_content .head , .course_content .content1, .course_content .content2 {
+    margin-left: -15px;
+    }
+    .details .container  .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+      margin-left: 45px;
+      width: 100%;
+    }
+    .details .container .course_description h2{
+      font-size: 32px;
+    }
+    .details .container .key_concept h3{
+      font-size: 25px;
+    }
+    .details .container .name_course{
+      font-size: 18px;
+      margin-left: 30px;
+    }
+    .details .container .risus{
+      margin-left: 30px;
+    }
+  /* end details */
+  .emailAddress h2{
+    font-size: 35px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: 60px;
+  }
+  footer .sec1 p{
+    max-width: 90%;
+    margin-left: -50px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: 100px;
+  }
+  footer .sec2{
+    margin-bottom: 30px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 130px;
+  }
+  footer .sec2 .links{
+    margin-left: 120px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 150px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: 50px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 135px;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 500px) and ( max-width:600px){
+  /* body{
+    overflow-x: hidden;
+  } */
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 150px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 150px;
+  }
+  /* details */
+  .details{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .details .container{
+    margin-right: 30px;
+  }
+  .details .container img{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .risus{
+    font-size: 12px;
+  }
+  .details .container .name_course, .details .container .course_description h2 ,.details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .key_concept h3 , .details .container .risus , .details .container .course_content .head , .course_content .content1, .course_content .content2 {
+  margin-left: -20px;
+  }
+  .details .container  .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+    margin-left: 30px;
+    width: 100%;
+  }
+  .details .container .course_description h2{
+    font-size: 25px;
+  }
+  .details .container .key_concept h3{
+    font-size: 20px;
+  }
+  .details .container .name_course{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .details .container .risus{
+    margin-left: 10px;
+  }
+  .details .container .key_concept ul li{
+    margin-right: 10px;
+  }
+  .details .container .course_content .head{
+    display: flex;
+    flex-direction: column;
+  }
+  .details .container .course_content .head h4{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .details .container .course_content .head button{
+    margin-right: 20px;
+  }
+  .details .container .course_content .head button i{
+    float: left;
+  }
+  .details .container .course_content .content1 , .container .content2{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .details .container .course_content .content1 a span , .details .container .course_content .content2 a span{
+    font-size: 14px;
+  }
+  .details .container .course_content .content1 button , .container .content2 button{
+    position: relative;
+    top: 30px;
+    left: 13px;
+    width: 100px;
+  }
+  .details .container .course_content .content1 .numTopic, .content2 .numTopic{
+    position: relative;
+    top: -25px;
+  }
+/* end details */
+  .emailAddress h2{
+    font-size: 33px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -50px;
+  }
+  footer .sec1 p{
+    max-width: 77%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: 40px;
+  }
+  footer .sec2{
+    margin-bottom: 30px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 80px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: -10px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 60px;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 12px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 12px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 400px) and ( max-width:500px){
+  body{
+    overflow-x: hidden;
+  }
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 190px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 200px;
+  }
+    /* details */
+    .details{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .details .container{
+      margin-right: 30px;
+    }
+    .details .container img{
+      width: 100%;
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+    .details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .risus{
+      font-size: 12px;
+    }
+    .details .container .name_course, .details .container .course_description h2 ,.details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .key_concept h3 , .details .container .risus , .details .container .course_content .head , .course_content .content1, .course_content .content2 {
+    margin-left: -20px;
+    }
+    .details .container  .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+      margin-left: 30px;
+      width: 100%;
+    }
+    .details .container .course_description h2{
+      font-size: 20px;
+    }
+    .details .container .key_concept h3{
+      font-size: 18px;
+    }
+    .details .container .name_course{
+      font-size: 15px;
+      margin-left: 10px;
+    }
+    .details .container .risus{
+      margin-left: 10px;
+    }
+    .details .container .key_concept ul li{
+      margin-right: 10px;
+    }
+    .details .container .course_content .head{
+      display: flex;
+      flex-direction: column;
+    }
+    .details .container .course_content .head h4{
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+    .details .container .course_content .head button{
+      margin-right: 20px;
+    }
+    .details .container .course_content .head button i{
+      float: left;
+    }
+    .details .container .course_content .content1 , .container .content2{
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .details .container .course_content .content1 a span , .details .container .course_content .content2 a span{
+      font-size: 14px;
+    }
+    .details .container .course_content .content1 button , .container .content2 button{
+      position: relative;
+      top: 30px;
+      left: 13px;
+      width: 100px;
+    }
+    .details .container .course_content .content1 .numTopic, .content2 .numTopic{
+      position: relative;
+      top: -25px;
+    }
+  /* end details */
+  .emailAddress h2{
+    font-size: 20px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .emailAddress button{
+    margin-top: 6px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -50px;
+    width: 160px;
+  }
+  footer .sec1 p{
+    max-width: 77%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: -10px;
+  }
+  footer .sec2 , footer .sec3{
+    margin-bottom: 30px;
+    margin-left: -40px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 80px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: -10px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 60px;
+  }
+  footer hr{
+    margin-top: -15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 10px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 10px
+  }
+  footer .finish{
+    margin-top: 20px;
+  }
+}
+@media(min-width: 300px) and ( max-width:400px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 240px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 250px;
+  }
+      /* details */
+      .details{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .details .container{
+        margin-right: 30px;
+      }
+      .details .container img{
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 30px;
+      }
+      .details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .risus{
+        font-size: 12px;
+      }
+      .details .container .name_course, .details .container .course_description h2 ,.details .container .course_description .para1 , .details .container .course_description .para2 ,.details .container .key_concept ul li , .details .container .key_concept h3 , .details .container .risus , .details .container .course_content .head , .course_content .content1, .course_content .content2 {
+      margin-left: -20px;
+      }
+      .details .container  .name_course ,.details .container .course_description ,.details .container .key_concept ,.details .container .risus ,.details .container .course_content{
+        margin-left: 30px;
+        width: 100%;
+      }
+      .details .container .course_description h2{
+        font-size: 17px;
+      }
+      .details .container .key_concept h3{
+        font-size: 13px;
+      }
+      .details .container .name_course{
+        font-size: 13px;
+        margin-left: 10px;
+      }
+      .details .container .risus{
+        margin-left: 10px;
+      }
+      .details .container .key_concept ul li{
+        margin-right: 10px;
+      }
+      .details .container .course_content .head{
+        display: flex;
+        flex-direction: column;
+      }
+      .details .container .course_content .head h4{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+      .details .container .course_content .head button{
+        margin-right: 20px;
+      }
+      .details .container .course_content .head button i{
+        float: left;
+      }
+      .details .container .course_content .content1 , .container .content2{
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .details .container .course_content .content1 a span , .details .container .course_content .content2 a span{
+        font-size: 11px;
+      }
+      .details .container .course_content .content1 button , .container .content2 button{
+        position: relative;
+        top: 30px;
+        left: 13px;
+        width: 100px;
+      }
+      .details .container .course_content .content1 .numTopic,.details .container .course_content .content2 .numTopic{
+        position: relative;
+        top: -25px;
+        font-size: 10px;
+      }
+    /* end details */
+  .emailAddress h2{
+    font-size: 18px;
+  }
+  .emailAddress p{
+    font-size: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .emailAddress input{
+    width: 200px;
+  }
+  .emailAddress button{
+    margin-top: 10px;
+    width: 100px;
+    font-size: 10px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -70px;
+    width: 140px;
+  }
+  footer .sec1 p{
+    max-width: 70%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: -40px;
+  }
+  footer .sec2 , footer .sec3{
+    margin-bottom: 25px;
+    margin-left: -85px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 100px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: 20px;
+    font-size: 12px !important;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 85px;
+    font-size: 12px !important;
+  }
+  footer hr{
+    margin-top: -15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 8px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 8px
+  }
+  footer .finish{
+    margin-top: 20px;
+  }
+}
+
+
+

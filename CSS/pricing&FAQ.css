@@ -1,0 +1,1319 @@
+:root {
+  --main-color: #FFFFFF;
+  --second-color:#ff9635;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family:"Poppins" , sans-serif; */
+  font-family: "Open Sans" , sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color: #ecf0f2;
+  /* overflow-x: hidden; */
+}
+*::selection{
+  background-color: #fab700;
+  color: black;
+}
+/* start navbar */
+.page1 .main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55vh;
+  background-color: rgb(0, 121, 145,0.850 );
+  border-radius: 0 0 155px 0;
+}
+.page1{
+  background-image: url("../images/bg-pricing-img.jpg");
+  background-attachment: fixed;
+  border-radius: 0 0 155px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 55vh;
+  /* margin-bottom: 90px; */
+}
+.container{
+  margin-left:90px;
+  margin-right: 100px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+.logo img{
+  margin-top: 13px;
+  width: 140px;
+}
+.navbar .links ul{
+  display: flex;
+  margin-left: 120px;
+}
+.navbar .links ul li{
+  font-family: "Open Sans" , sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  padding: 13px 14px;
+}
+.navbar .links ul li a{
+  color: var(--main-color);
+}
+.navbar i{
+  display: none;
+}
+.navbar .btn{
+  color:var(--main-color);
+  text-transform: uppercase;
+  border-radius:100px ;
+  border: none;
+  margin-top: 11px;
+  margin-left: -80px;
+  padding: 9px 15px;
+  width: 180px;
+  background-color:var(--second-color) ;
+  font-weight: 600;
+  line-height: 1rem;
+  transition: 0.5s;
+}
+.navbar .btn:hover{
+  background-color: #376fa0;
+  cursor: pointer;
+}
+.content{
+  position: relative;
+  top: 90px;
+  left: 40px;
+  max-width: 600px;
+}
+.content h1{
+  color: var(--main-color);
+  font-size: 75px;
+  line-height:60px;
+  margin-bottom: 30px;
+}
+.last {
+  color: var(--main-color);
+}
+.last p{
+  font-size:15px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+/* page2 */
+section.page2{
+  background-color: #ecf0f2;
+  margin-top: 80px;
+}
+.sec2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.sec2 .part1{
+  margin-left: 40px;
+  margin-right: 50px;
+  text-wrap: nowrap;
+}
+.sec2 .part1 p{
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sec2 .part1 h2{
+  font-size: 40px;
+}
+.sec2 .part2{
+  margin-left: 10px;
+}
+.part2 .text{
+  border-left: 2px solid var(--second-color);
+  height: 100px;
+  padding-left: 40px;
+  padding-top: 15px;
+  color: #22323D;
+  line-height: 30px;
+  font-size: 15px;
+}
+/* cards */
+.cards .container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+.cards .container .card1 , .container .card3{
+  background-color: var(--main-color);
+  width: 350px;
+  height: 490px;
+  border-radius: 10px;
+  padding-top: 70px;
+  padding-left: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cards .container .card1 .duration , .cards .card1 .price , .cards .container .card2 .duration , .cards .card2 .price ,.cards .container .card3 .duration , .cards .card3 .price {
+  text-align: center;
+  margin-left: -50px;
+}
+.cards .container .card1 .duration , .cards .container .card2 .duration , .cards .container .card3 .duration{
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.cards .card1 .price , .cards .card2 .price , .cards .card3 .price{
+  margin-bottom: 20px;
+}
+.cards .card1 .price strong , .cards .card2 .price strong ,  .cards .card3 .price strong{
+  font-size: 45px;
+}
+.cards .card1 .price span , .cards .card2 .price span , .cards .card3 .price span{
+  font-weight: bold;
+  padding-left: 10px;
+}
+.card1 .line1 , .card1 .line2 , .card1 .line3 , .card1 .line4 , .card1 .line5 , .card1 .line6 , .card2 .line1 , .card2 .line2 , .card2 .line3 , .card2 .line4 , .card2 .line5 , .card2 .line6 , .card3 .line1 , .card3 .line2 , .card3 .line3 , .card3 .line4 , .card3 .line5 , .card3 .line6{
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.card1 .line1 i , .card1 .line2 i , .card1 .line3 i , .card1 .line4 i, .card1 .line5 i, .card1 .line6 i , .card2 .line1 i , .card2 .line2 i , .card2 .line3 i , .card2 .line4 i, .card2 .line5 i, .card2 .line6 i ,.card3 .line1 i , .card3 .line2 i , .card3 .line3 i , .card3 .line4 i, .card3 .line5 i, .card3 .line6 i{
+  padding-right: 2px;
+}
+.card1 .line4 , .card1 .line5 , .card1 .line6 {
+  color: #bababa;
+}
+.card1 button , .card2 button , .card3 button{
+    color:var(--main-color);
+    text-transform: uppercase;
+    border-radius:100px ;
+    border: none;
+    padding: 13px 15px;
+    width: 150px;
+    background-color:var(--second-color);
+    font-weight: 600;
+    line-height: 1rem;
+    transition: 0.5s;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+.card1 button:hover , .card2 button:hover , .card3 button:hover{
+  background-color: #376fa0;
+  cursor: pointer;
+}
+.cards .card2{
+  background-color: #007991;
+  width: 350px;
+  height: 490px;
+  border-radius: 10px;
+  padding-top: 70px;
+  padding-left: 40px;
+  color: var(--main-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card2 .line6 {
+  color: #bababa;
+}
+/* questions */
+.questions .container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.questions .container .part1{
+  margin-left: -40px;
+}
+.questions .part1 .line1{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.questions .part1 h2{
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.questions .part1 .line2{
+  font-size: 14px;
+  color: #22323D;
+  width: 270px;
+}
+.questions .container .part2 .line{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236 240 242);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 15px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 650px;
+}
+.questions .container .part2 .line:hover{
+  cursor: pointer;
+}
+.questions .container .part2 .line p{
+  font-weight: bold;
+  font-size: 15px;
+}
+/* email address */
+.emailAddress{
+  background-color: #e1e7eb;
+  height: 290px;
+  text-align: center;
+}
+.emailAddress h2{
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.emailAddress p{
+  color: #22323D;
+  font-weight:lighter ;
+  margin-bottom: 25px;
+}
+.emailAddress input{
+  height: 40px;
+  width: 300px;
+  border: none;
+  padding: 10px;
+}
+.emailAddress input:focus{
+  border: 1px dotted #22323d;
+  outline: none;
+}
+.emailAddress button{
+  margin-left: 10px;
+  border: none;
+  background-color: var(--second-color);
+  padding: 12px;
+  border-radius: 30px;
+  width: 140px;
+  color: var(--main-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.emailAddress button:hover{
+  background-color: #376fa0;
+}
+/* footer */
+footer{
+  background-color: var(--main-color);
+  height: 390px;
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+footer .container .sec1{
+  width: 500px;
+  font-size: 15px;
+  margin-left: 45px;
+  display: block;
+}
+footer .sec1 img{
+  height: 60px;
+}
+footer .container .sec1 p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:#22323d;
+}
+footer .container .sec1 i{
+  color: black;
+  padding-right: 9px;
+}
+footer .container .sec1 i:hover{
+  color: var(--second-color);
+}
+footer .container .sec2{
+  display: block;
+}
+footer .sec2 .links{
+  display: flex;
+  flex-direction: column;
+}
+footer h3{
+  margin-bottom: 18px;
+}
+footer .sec2 .links a{
+margin-bottom: 5px;
+color: #22323d;
+}
+footer .sec2 .links a:hover{
+  color: #428bca;
+}
+footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 6px;
+  font-size: 17px;
+}
+hr{
+  margin-top: -50px;
+  border: 1px solid  #e7e7e7;
+}
+footer section{
+  background-color: var(--main-color);
+  display: inline;
+}
+footer .finish{
+  margin-left: 145px;
+  margin-top: 45px;
+  margin-right: 145px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #22323d;
+}
+
+/* media query */
+@media(min-width: 1100px) and ( max-width:1288px){
+  .page1 .container , .page2 .container ,.page3 .container ,.page4 .container , .page5 .container , footer .container{
+    margin-left: 5px;
+    margin-right: 30px;
+  }
+  .links ul {
+    width: 600px;
+  }
+  .links ul li a{
+    text-wrap: nowrap;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 100px;
+  }
+  .content , footer .container {
+    margin-left: -20px;
+  }
+  .page2 .container{
+    margin-left:20px;
+  }
+  /* CARDS */
+  /* .cards .container{
+    margin-left: 50px;
+  } */
+  .cards .container .card1 , .cards .container .card2{
+    margin-right: 30px;
+  }
+  .cards .card1 button ,.cards .card2 button, .cards .card3 button{
+    margin-left: 35px;
+  }
+  footer .container .sec3{
+    margin-right: 20px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+@media(min-width: 1026px) and ( max-width:1100px){
+  .page1 .container , .page2 .container ,.page3 .container ,.page4 .container , .page5 .container , .cards .container , footer .container{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .links ul {
+    width: 650px;
+  }
+  .links ul li a{
+    text-wrap: nowrap;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 90px;
+  }
+  .content , .page2 .sec1 , .page2 .sec2 ,.cards .container , footer .container , .page4 .container , .page5 .container {
+    margin-left: -20px;
+  }
+  .content .last p{
+    font-size: 15px;
+  }
+  .page2 .container{
+    margin-left:30px;
+  }
+  .cards .container{
+    margin-left: 20px;
+  }
+  .cards .card1 , .cards .card2{
+    margin-right: 20px;
+  }
+  .cards .card1 button ,.cards .card2 button, .cards .card3 button{
+    margin-left: 30px;
+  }
+  footer .sec1{
+    max-width: 350px;
+  }
+  footer .sec3{
+    margin-right: 20px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+@media(min-width: 885px) and ( max-width:1026px){
+  .page1 .container , .page2 .container ,.page3 .container ,.page4 .container , .page5 .container , .cards .container , footer .container{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .navbar .logo{
+    width: 80px;
+    position: relative;
+    left: 10px;
+  }
+  .page1 .container .navbar{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .page1 .content{
+    margin-left: 140px;
+  }
+  nav .links ul {
+    width: 600px;
+    position: relative;
+    left: -10px;
+  }
+  nav .links ul li a{
+    text-wrap: nowrap;
+    font-size: 12px;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 80px;
+    text-wrap: nowrap;
+    position: relative;
+    left: -10px;
+  }
+  .content {
+    position: relative;
+    left: -130px;
+    max-width: 600px;
+  }
+  .content .last p{
+    font-size: 14px;
+  }
+  .page2 .container{
+    margin-left:-20px;
+  }
+  .cards .container{
+    margin-left: 20px;
+  }
+  .cards .card1 ,.cards .card2{
+    margin-right: 20px;
+  }
+  .cards .card1 button ,.cards .card2 button, .cards .card3 button{
+    margin-left: 20px;
+  }
+  /* questions */
+  .questions .container{
+    margin-left: 130px;
+  }
+  .questions .container .part1 .line1{
+    font-size: 14px;
+  }
+  .questions .container .part1 .line2{
+    font-size: 13px;
+  }
+  .questions .container .part2 .line{
+    max-width:550px;
+  }
+  footer .container{
+    margin-left: -30px;
+    height: 350px;
+  }
+  footer .sec1{
+    max-width: 300px;
+  }
+  footer .sec1{
+    width: 370px;
+  }
+  footer .sec3{
+    margin-right: 20px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+
+@media(min-width: 750px) and ( max-width:885px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  nav{
+    width: 50%;
+  }
+  .logo{
+    position: relative;
+    left: 150px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: -130px;
+    margin-left: -20px;
+  }
+  .page1 .content{
+    margin-left: -100px;
+  }
+  .content .last p{
+    font-size: 14px;
+  }
+  .page2 .container{
+    margin-left:-20px;
+  }
+  .page2 .part2 .text{
+    height: 180px;
+    margin-top: -30px;
+  }
+  /* cards */
+  .cards{
+    max-width: 100%;
+  }
+  .cards .container{
+    margin-left: 120px;
+    margin-right:120px;
+  }
+  .cards .card1 ,.cards .card2{
+    margin-right: 16px;
+  }
+  .cards .card1 button ,.cards .card2 button, .cards .card3 button{
+    position: relative;
+    left: -50px;
+    font-size: 12px;
+    max-width:130px;
+  }
+  .cards .card1 .price strong,.cards .card2 .price strong ,.cards .card3 .price strong{
+    font-size:35px ;
+  }
+  .cards .card1 .line1 , .cards .card1 .line2, .cards .card1 .line3 , .cards .card1 .line4 , .cards .card1 .line5 , .cards .card1 .line6{
+    font-size: 13px;
+    margin-left: -20px;
+  }
+  .cards .card2 .line1 , .cards .card2 .line2, .cards .card2 .line3 , .cards .card2 .line4 , .cards .card2 .line5 , .cards .card2 .line6{
+    font-size: 13px;
+    margin-left: -20px;
+  }
+  .cards .card3 .line1 , .cards .card3 .line2, .cards .card3 .line3 , .cards .card3 .line4 , .cards .card3 .line5 , .cards .card3 .line6{
+    font-size: 13px;
+    margin-left: -20px;
+  }
+  /* questions */
+  .questions .container{
+    margin-left: 130px;
+  }
+  .questions .container .part1 .line1{
+    font-size: 14px;
+  }
+  .questions .container .part1 .line2{
+    font-size: 13px;
+  }
+  .questions .container .part2 .line{
+    max-width:400px;
+  }
+  .questions .container .part2 .line p{
+    font-size: 13px;
+  }
+  footer .container{
+    margin-left: -30px;
+    height: 300px;
+  }
+  footer .sec1{
+    max-width: 300px;
+    text-wrap: wrap;
+  }
+  footer .sec2 , footer .sec1{
+    margin-right: 70px;
+  }
+  footer .sec2 .links{
+    text-wrap: nowrap;
+  }
+  footer .sec2 h3 , footer .sec3 h3{
+    font-size: 16px;
+    text-wrap: nowrap;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 600px) and ( max-width:750px){
+  body{
+    overflow-x: hidden;
+  }
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 90px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 100px;
+  }
+  .page1 .content{
+    margin-left: -120px;
+  }
+  .page1 .content h1{
+    font-size: 40px;
+    width: 100%;
+  }
+  .page1 .content .last p{
+    font-size:13px;
+  }
+  .page2 .container{
+    margin-left:-20px;
+  }
+  .page2 .container .sec2 .part1 p{
+    font-size:11px;
+    font-weight: 600;
+  }
+  .page2 .container .sec2 .part1 h2{
+    font-size: 20px;
+  }
+  .page2 .container .sec2 .part2 .text{
+    height: 170px;
+    margin-top: -30px;
+    font-size: 14px;
+  }
+    /* cards */
+    .cards{
+      max-width: 100%;
+    }
+    .cards .container{
+      margin-left: 120px;
+      margin-right:120px;
+    }
+    .cards .card1 ,.cards .card2{
+      margin-right: 16px;
+    }
+    .cards .card1 button ,.cards .card2 button, .cards .card3 button{
+      position: relative;
+      left: -50px;
+      font-size: 11px;
+      max-width:85px;
+    }
+    .cards .card1 .price strong,.cards .card2 .price strong ,.cards .card3 .price strong{
+      font-size:30px ;
+    }
+    .cards .card1 .line1 , .cards .card1 .line2, .cards .card1 .line3 , .cards .card1 .line4 , .cards .card1 .line5 , .cards .card1 .line6{
+      font-size: 12px;
+      margin-left: -20px;
+    }
+    .cards .card2 .line1 , .cards .card2 .line2, .cards .card2 .line3 , .cards .card2 .line4 , .cards .card2 .line5 , .cards .card2 .line6{
+      font-size: 12px;
+      margin-left: -20px;
+    }
+    .cards .card3 .line1 , .cards .card3 .line2, .cards .card3 .line3 , .cards .card3 .line4 , .cards .card3 .line5 , .cards .card3 .line6{
+      font-size: 12px;
+      margin-left: -20px;
+    }
+  /* questions */
+  .questions .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .questions .container .part1{
+    margin-left: -70px;
+    margin-bottom: 30px;
+  }
+  .questions .container .part2 .line{
+    margin-left: -70px;
+    max-width: 100%;
+  }
+  .emailAddress h2{
+    font-size: 35px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: 60px;
+  }
+  footer .sec1 p{
+    max-width: 90%;
+    margin-left: -50px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: 100px;
+  }
+  footer .sec2{
+    margin-bottom: 30px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 130px;
+  }
+  footer .sec2 .links{
+    margin-left: 120px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 150px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: 50px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 135px;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 500px) and ( max-width:600px){
+  body{
+    overflow-x: hidden;
+  }
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 150px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 150px;
+  }
+  .page1 .content{
+    margin-left: -120px;
+  }
+  .page1 .content h1{
+    font-size: 30px;
+    width: 100%;
+  }
+  .page1 .content .last p{
+    font-size:12px;
+  }
+  .page2 .container{
+    margin-left:-20px;
+  }
+  .page2 .container .sec2 .part1 p{
+    font-size:10px;
+    font-weight: 600;
+  }
+  .page2 .container .sec2 .part1 h2{
+    font-size: 18px;
+  }
+  .page2 .container .sec2 .part2 .text{
+    height: 200px;
+    margin-top: -30px;
+    font-size: 11px;
+  }
+  /* card */
+  .card1 , .card2 ,.card3{
+    max-width: 100%;
+  }
+  .cards .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .card1 , .card2{
+    margin-bottom: 30px;
+  }
+  .card1 button , .card2 button , .card3 button{
+    width: 120px;
+  }
+  /* questions */
+  .questions .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .questions .container .part1{
+    margin-left: -70px;
+    margin-bottom: 30px;
+  }
+  .questions .container .part2 .line{
+    margin-left: -70px;
+    max-width: 100%;
+  }
+  .questions .container .part2 .line p{
+    font-size: 13px;
+  }
+  .emailAddress h2{
+    font-size: 33px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -50px;
+  }
+  footer .sec1 p{
+    max-width: 77%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: 40px;
+  }
+  footer .sec2{
+    margin-bottom: 30px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 80px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: -10px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 60px;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 12px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 12px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 400px) and ( max-width:500px){
+  body{
+    overflow-x: hidden;
+  }
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 190px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 200px;
+  }
+  .page1 .content{
+    margin-left: -120px;
+  }
+  .page1 .content h1{
+    font-size: 25px;
+    width: 100%;
+  }
+  .page1 .content .last p{
+    font-size:12px;
+  }
+  .page2 .container .sec2{
+    margin-left:-20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page2 .container{
+    margin-left:-10px;
+  }
+  .page2 .container .part1{
+    margin-bottom: 20px;
+  }
+  .page2 .container .part2{
+    margin-left: 50px;
+  }
+  .page2 .container .part2 .text{
+    font-size: 12px;
+    height: 150px;
+  }
+  /* card */
+  .card1 , .card2 ,.card3{
+    max-width: 100%;
+  }
+  .cards .container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .card1 , .card2{
+    margin-bottom: 30px;
+  }
+  .card1 button , .card2 button , .card3 button{
+    width: 120px;
+    position: relative;
+    left: -10px;
+  }
+  /* questions */
+  .questions .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .questions .container .part1{
+    margin-left: -70px;
+    margin-bottom: 30px;
+  }
+  .questions .container .part2 .line{
+    margin-left: -70px;
+    max-width: 100%;
+  }
+  .questions .container .part2 .line p{
+    font-size: 13px;
+  }
+  .emailAddress h2{
+    font-size: 20px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .emailAddress button{
+    margin-top: 6px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -50px;
+    width: 160px;
+  }
+  footer .sec1 p{
+    max-width: 77%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: -10px;
+  }
+  footer .sec2 , footer .sec3{
+    margin-bottom: 30px;
+    margin-left: -40px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 80px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: -10px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 60px;
+  }
+  footer hr{
+    margin-top: -15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 10px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 10px
+  }
+  footer .finish{
+    margin-top: 20px;
+  }
+}
+@media(min-width: 300px) and ( max-width:400px){
+  body{
+    overflow-x:hidden ;
+  }
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 240px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 250px;
+  }
+  .page1 .content{
+    margin-left: -120px;
+  }
+  .page1 .content h1{
+    font-size: 20px;
+    width: 100%;
+  }
+  .page1 .content .last p{
+    font-size:10px;
+  }
+  .page2 .container .sec2{
+    margin-left:-20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page2 .container{
+    margin-left:-10px;
+  }
+  .page2 .container .part1{
+    margin-bottom: 20px;
+  }
+  .page2 .container .part1 p{
+    font-size: 14px;
+  }
+  .page2 .container .part1 h2{
+    font-size: 25px;
+  }
+  .page2 .container .part2{
+    margin-left: 50px;
+  }
+  .page2 .container .part2 .text{
+    font-size: 10px;
+    height: 170px;
+  }
+  /* card */
+  .cards .container .card1 p strong ,.cards .container .card2 p strong ,.cards .container .card3 p strong{
+    font-size: 30px;
+  }
+  .card1 , .card2 ,.card3{
+    max-width: 130%;
+  }
+  .cards .container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .card1 , .card2{
+    margin-bottom: 30px;
+  }
+  .card1 button , .card2 button , .card3 button{
+    width: 120px;
+    position: relative;
+    left: -10px;
+  }
+  .cards .card1 button ,.cards .card2 button, .cards .card3 button{
+    position: relative;
+    left: -20px;
+    font-size: 10px;
+    max-width:100px;
+  }
+  .cards .card1 .price strong,.cards .card2 .price strong ,.cards .card3 .price strong{
+    font-size:30px ;
+  }
+  .cards .card1 .line1 , .cards .card1 .line2, .cards .card1 .line3 , .cards .card1 .line4 , .cards .card1 .line5 , .cards .card1 .line6{
+    font-size: 12px;
+    margin-left: -15px;
+  }
+  .cards .card2 .line1 , .cards .card2 .line2, .cards .card2 .line3 , .cards .card2 .line4 , .cards .card2 .line5 , .cards .card2 .line6{
+    font-size: 12px;
+    margin-left: -15px;
+  }
+  .cards .card3 .line1 , .cards .card3 .line2, .cards .card3 .line3 , .cards .card3 .line4 , .cards .card3 .line5 , .cards .card3 .line6{
+    font-size: 12px;
+    margin-left: -15px;
+  }
+  /* questions */
+  .questions .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .questions .container .part1{
+    margin-left: -70px;
+    margin-bottom: 30px;
+  }
+  .questions .container .part1 .line2{
+    font-size: 12px;
+  }
+  .questions .container .part2 .line{
+    margin-left: -70px;
+    max-width: 120%;
+  }
+  .questions .container .part2 .line p{
+    font-size: 10px;
+  }
+  .emailAddress h2{
+    font-size: 18px;
+  }
+  .emailAddress p{
+    font-size: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .emailAddress input{
+    width: 200px;
+  }
+  .emailAddress button{
+    margin-top: 10px;
+    width: 100px;
+    font-size: 10px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -70px;
+    width: 140px;
+  }
+  footer .sec1 p{
+    max-width: 70%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: -40px;
+  }
+  footer .sec2 , footer .sec3{
+    margin-bottom: 25px;
+    margin-left: -85px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 100px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: 20px;
+    font-size: 12px !important;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 85px;
+    font-size: 12px !important;
+  }
+  footer hr{
+    margin-top: -15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 8px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 8px
+  }
+  footer .finish{
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+

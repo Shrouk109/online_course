@@ -1,0 +1,2166 @@
+:root {
+  --main-color: #FFFFFF;
+  --second-color:#ff9635;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family:"Poppins" , sans-serif; */
+  font-family: "Open Sans" , sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color: #ecf0f2;
+  overflow-x: hidden;
+}
+*::selection{
+  background-color: #fab700;
+  color: black;
+}
+/* start navbar */
+.page1 .main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 93vh;
+  background-color: rgb(0, 121, 145,0.876 );
+  border-radius: 0 0 155px 0;
+}
+.page1{
+  background-image: url("../images/background.jpg");
+  background-attachment: fixed;
+  border-radius: 0 0 155px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 93vh;
+  /* margin-bottom: 90px; */
+}
+.container{
+  margin-left:100px;
+  margin-right: 100px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+.navbar i{
+  display: none;
+}
+.logo img{
+  margin-top: 13px;
+  width: 140px;
+}
+.navbar .links ul{
+  display: flex;
+  margin-left: 120px;
+}
+.navbar .links ul li{
+  font-family: "Open Sans" , sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  padding: 13px 14px;
+}
+.navbar .links ul li a{
+  color: var(--main-color);
+}
+.navbar .btn{
+  text-transform: uppercase;
+  border-radius:100px ;
+  border: none;
+  margin-top: 11px;
+  margin-left: -80px;
+  padding: 9px 15px;
+  width: 180px;
+  background-color:var(--second-color) ;
+  font-weight: 600;
+  line-height: 1rem;
+  transition: 0.5s;
+}
+.navbar .btn a{
+  color:var(--main-color);
+}
+.navbar .btn:hover{
+  background-color: #376fa0;
+  cursor: pointer;
+}
+.content{
+  position: relative;
+  top: 130px;
+  left: 45px;
+  max-width: 600px;
+}
+.content .line1{
+  color: var(--main-color);
+  text-transform:uppercase;
+  margin-bottom: 30px;
+}
+.content .line1 i{
+  color: var(--second-color);
+  font-size: 13px;
+}
+.line1 span{
+  font-size: small;
+  letter-spacing: 1px;
+}
+.content h1{
+  color: var(--main-color);
+  font-size: 65px;
+  line-height:60px;
+  margin-bottom: 35px;
+}
+.last {
+  color: var(--main-color);
+}
+.last p{
+  font-size:17px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+.last button{
+  background-color: var(--second-color);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  margin-right: 30px;
+  padding: 12px 10px;
+  width: 150px;
+  font-weight: 600;
+  line-height: 1rem;
+  transition: 0.6s;
+}
+.last button:hover{
+  background-color: #376fa0;
+}
+.last button a{
+  color: var(--main-color);
+}
+.last .AllCourses{
+  color: var(--main-color);
+  transition: 0.6s;
+}
+.last .AllCourses:hover i , .AllCourses:hover span{
+  color: var(--second-color);
+}
+.last .AllCourses i{
+  font-size: 8px;
+  padding-right: 10px;
+}
+.last .AllCourses span{
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: -10px;
+  letter-spacing: 1px;
+}
+
+/* page2 */
+section{
+  background-color: #ecf0f2;
+}
+section .sec1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  padding-top: 90px;
+}
+section .sec1 h2{
+  font-size: 40px;
+  width: 340px;
+  margin-left: 45px;
+  line-height:50px;
+}
+.sec1 .images img{
+  padding-top: 25px;
+  margin-right: 25px;
+}
+.sec2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.sec2 .part1{
+  margin-left: 45px;
+  width: 330px;
+}
+.sec2 .part1 p{
+  font-size: medium;
+  font-weight: bold;
+}
+.sec2 .part1 h2{
+  font-size: 40px;
+}
+.sec2 .part2{
+  margin-left: -80px;
+  max-width: 500px;;
+}
+.part2 .text{
+  border-left: 2px solid var(--second-color);
+  padding-left: 40px;
+  color: #22323D;
+  line-height: 25px;
+}
+.part3{
+  position: relative;
+  right: 50px;
+}
+.part3 button{
+  border: none;
+  background-color: var(--second-color);
+  text-transform: uppercase;
+  padding: 11px 15px;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.part3 button:hover{
+  background-color: #376fa0;
+}
+.part3 button a{
+  color: var(--main-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.cards{
+  display: flex;
+  justify-content:space-between;
+  margin-left: 45px;
+  margin-bottom:90px;
+}
+.cards .card{
+  background-color: #FFFFFF;
+  height: 500px;
+  border-radius: 10px;
+}
+.cards .card img{
+  width: 344px;
+  height: 230px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.card h2{
+  font-size: 40px;
+  width: 340px;
+  margin-left: 15px;
+}
+.card p{
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.card p i{
+  color: var(--second-color);
+  border: none;
+}
+.card button{
+  margin-left: 10px;
+  width: 344px;
+  border: none;
+  margin-top:15px ;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #376fa0;
+  margin-bottom:15px ;
+}
+.card button:hover{
+  cursor: pointer;
+}
+.card a button {
+  color: var(--main-color);
+}
+.progress-bar {
+  width: 345px;
+  height: 10px;
+  background-color: #e2e7ed;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+.progress-bar p{
+  position: relative;
+  left: 60%;
+}
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  width:60px;
+  border-radius: 50px;
+}
+.page3{
+  background-image: url("../images/background2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+.page3 .main2{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 45vh;
+  background-color: rgb(0, 121, 145,0.950 );
+}
+.page3 .container{
+  display: flex;
+  justify-content: space-between;
+}
+.page3 .section:first-of-type{
+  margin-left: 45px;
+}
+.page3 .section{
+  margin-top: 90px;
+  margin-right: 30px;
+}
+.page3 .section h2{
+  margin-bottom: 15px;
+  color:  var(--main-color)
+}
+.page3 .section p{
+  width: 223px;
+  color: #eaeaea;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.page3 .lastSection{
+  margin-top: 65px;
+  background-color: var(--main-color);
+  height: 35.4vh;
+  font-family: Poppins , sans-serif;
+}
+.page3 .lastSection p , .lastSection h2 , .lastSection a{
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 24px;
+}
+.page3 .lastSection p{
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.6s;
+}
+.page3 .lastSection .getStart i {
+  margin-top: 35px;
+  font-size: 9px;
+  margin-right: 8px;
+  color: black;
+  transition: 0.3s;
+}
+.page3 .lastSection .getStart:hover i ,.page3 .lastSection .getStart:hover span{
+  color: var(--second-color);
+}
+.page3 .lastSection .getStart span{
+  text-transform: uppercase;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.page4{
+  margin-bottom: 120px;
+}
+.page4 .container {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.page4 .part1{
+  margin-left: 45px;
+}
+.page4 .part1 .feature{
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.page4 .part1 h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.page4 .part1 .lorem{
+  font-size: 15px;
+  width: 480px;
+}
+.page4 .part2{
+  margin-left: 130px;
+}
+.page4 .line1 , .page4 .line2 , .page4 .line3{
+  display: flex;
+  margin-bottom: 30px;
+}
+.page4 .icon i{
+  background-color: var(--second-color);
+  border-radius: 50%;
+  padding: 6px;
+  color: var(--main-color);
+  font-size: 19px;
+  transition: 0.3s;
+}
+.page4 .icon i:hover{
+  color: #2e5f89;
+}
+.page4 .part2 h3 ,.page4 .part2 p {
+  margin-left: 10px;
+}
+.page4 .part2 p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+.page5 .container {
+  display: flex;
+}
+.page5 .Lpart{
+  margin-left: 45px;
+  margin-bottom: 40px;
+}
+.page5 .Lpart p{
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.page5 .Lpart h2{
+  width: 460px;
+  font-size: 40px;
+}
+.page5 .Rpart{
+  margin-left: 250px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.page5 .Rpart .num{
+  font-size: 50px;
+  font-weight: bolder;
+}
+.page5 .Rpart .rate_stars {
+  margin-top: 7px;
+  margin-left: 3px;
+}
+.page5 .Rpart .rate_stars p i{
+  color: var(--second-color);
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size:18px;
+}
+.page5 .Rpart .rate_stars .rate , .rate_stars .review{
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.cards .firstTwoCard .card1 ,.firstTwoCard .card2 , .secTwoCard .card1 , .secTwoCard .card2 {
+  background-color: var(--main-color);
+  border-radius: 20px;
+  width: 550px;
+  height: 210px;
+}
+.cards .firstTwoCard .card1 .text ,.firstTwoCard .card2 .text , .secTwoCard .card1 .text , .secTwoCard .card2 .text {
+  color: #22323d;
+  font-size: 15px;
+  padding: 0px 64px 20px 40px;
+  font-weight: lighter;
+}
+.cards .firstTwoCard .card1 .name,.firstTwoCard .card2 .name, .secTwoCard .card1 .name , .secTwoCard .card2 .name {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size:15px;
+  margin-bottom: 5px;
+}
+.cards .firstTwoCard .card1 .stars ,.firstTwoCard .card2 .stars, .secTwoCard .card1 .stars, .secTwoCard .card2 .stars{
+  float:right;
+  padding-right: 10px;
+  color: var(--second-color);
+}
+.cards .firstTwoCard .card1 img ,.firstTwoCard .card2 img , .secTwoCard  .card1 img, .secTwoCard .card2 img {
+  border-radius: 20px;
+  position: relative;
+  top: -40px;
+  left: 45px;
+}
+.emailAddress{
+  background-color: #e1e7eb;
+  height: 290px;
+  text-align: center;
+}
+.emailAddress h2{
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.emailAddress p{
+  color: #22323D;
+  font-weight:lighter ;
+  margin-bottom: 25px;
+}
+.emailAddress input{
+  height: 40px;
+  width: 300px;
+  border: none;
+  padding: 10px;
+}
+.emailAddress input:focus{
+  border: 1px dotted #22323d;
+  outline: none;
+}
+.emailAddress button{
+  margin-left: 10px;
+  border: none;
+  background-color: var(--second-color);
+  padding: 12px;
+  border-radius: 30px;
+  width: 140px;
+  color: var(--main-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.emailAddress button:hover{
+  background-color: #376fa0;
+}
+footer{
+  background-color: var(--main-color);
+  height: 390px;
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+footer .container .sec1{
+  width: 500px;
+  font-size: 15px;
+  margin-left: 45px;
+}
+footer .sec1 img{
+  height: 60px;
+}
+footer .container .sec1 p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:#22323d;
+}
+footer .container .sec1 i{
+  color: black;
+  padding-right: 9px;
+}
+footer .container .sec1 i:hover{
+  color: var(--second-color);
+}
+footer .container .sec2{
+  display: block;
+}
+footer .sec2 .links{
+  display: flex;
+  flex-direction: column;
+}
+footer h3{
+  margin-bottom: 18px;
+}
+footer .sec2 .links a{
+margin-bottom: 5px;
+color: #22323d;
+}
+footer .sec2 .links a:hover{
+  color: #428bca;
+}
+footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 6px;
+  font-size: 17px;
+}
+hr{
+  margin-top: -50px;
+  border: 1px solid  #e7e7e7;
+}
+footer section{
+  background-color: var(--main-color);
+  display: inline;
+}
+footer .finish{
+  margin-left: 145px;
+  margin-top: 45px;
+  margin-right: 145px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #22323d;
+}
+/* media query */
+@media(min-width: 1100px) and ( max-width:1288px){
+  .page1 .container , .page2 .container ,.page3 .container ,.page4 .container , .page5 .container , .cards .container , footer .container{
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+  .links ul {
+    width: 600px;
+  }
+  .links ul li a{
+    text-wrap: nowrap;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 100px;
+  }
+  .content , .page2 .sec1 , .page2 .sec2 ,.cards .container , footer .container {
+    margin-left: -20px;
+  }
+  .page2 .sec2 .part2 .text{
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  .page2 .cards{
+    margin-right: 5px;
+  }
+  .page2 .cards{
+    margin-right: 20px;
+  }
+  .page2 .cards .card{
+    max-width: 340px;
+    margin-left: -20px;
+  }
+  .page2 .cards .card img ,.page2 .cards .card button ,.progress-bar {
+    max-width:320px ;
+  }
+  .page2 .cards .card h2{
+    font-size: 35px;
+  }
+  .page3 .section p{
+    font-size: 14px;
+    width: 200px;
+  }
+  .page3 .container , .page5 .container{
+    margin-left:-20px;
+  }
+  .page4 .part1{
+    margin-left: 20px;
+  }
+  .page4 .part2{
+    margin-left: 80px;
+  }
+  .cards .container .firstTwoCard {
+    width: 1160px;
+  }
+  .cards .firstTwoCard .card2 {
+    margin-right: 100px;
+  }
+  .cards .container .secTwoCard .card1 , .cards .container .secTwoCard .card2{
+    width: 515px;
+  }
+  .cards .container .secTwoCard .card2{
+    margin-right: 100px;
+  }
+  footer .container .sec3{
+    margin-right: 20px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+
+@media(min-width: 1026px) and ( max-width:1100px){
+  .page1 .container , .page2 .container ,.page3 .container ,.page4 .container , .page5 .container , .cards .container , footer .container{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .links ul {
+    width: 650px;
+  }
+  .links ul li a{
+    text-wrap: nowrap;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 90px;
+  }
+  .content , .page2 .sec1 , .page2 .sec2 ,.cards .container , footer .container , .page4 .container , .page5 .container {
+    margin-left: -20px;
+  }
+  .content .last p{
+    font-size: 15px;
+  }
+  .page2 .sec1 h2{
+    font-size: 35px;
+    margin-left: 35px;
+  }
+  .page2 .sec2 .part1 h2{
+    font-size: 35px;
+  }
+  .page2 .sec2 .part2 .text{
+    max-width: 450px;
+    margin-left: 10px;
+  }
+  .page2 .sec2 .part3 button{
+    letter-spacing: 0px;
+    text-wrap: nowrap;
+    position: relative;
+    left: 20px;
+  }
+  .page2 .cards .card{
+    max-width: 310px;
+    margin-left: -20px;
+  }
+  .page2 .cards .card img ,.page2 .cards .card button ,.progress-bar {
+    max-width:290px ;
+  }
+  .page2 .cards .card h2{
+    font-size: 35px;
+  }
+  .progress-bar p{
+    font-size: 14px;
+  }
+  .page3 .container{
+    margin-left: -20px;
+    margin-right: 0;
+  }
+  .page3 .container .section{
+    width: 200px;
+    margin-right:40px;
+  }
+  .page3 .container p{
+    font-size: 14px;
+  }
+  .page3 .lastSection{
+    margin-right: 0px;
+  }
+  .page3 .lastSection h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .page3 .lastSection a{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .page5 .Rpart{
+    margin-right: 40px;
+  }
+  .page5 .cards .card{
+    text-wrap: wrap;
+  }
+  .cards .firstTwoCard .card1 , .firstTwoCard .card2 , .secTwoCard .card1  , .secTwoCard .card2{
+    max-width:475px;
+  }
+  footer .sec1{
+    width: 370px;
+  }
+  footer .sec3{
+    margin-right: 10px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+}
+
+@media(min-width: 885px) and ( max-width:1026px){
+  .page1 .container , .page2 .container ,.page3 .container ,.page4 .container , .page5 .container , .cards .container , footer .container{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .navbar .logo{
+    width: 80px;
+  }
+  .page1 .container .navbar{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .page1 .content{
+    margin-left: 140px;
+  }
+  nav .links ul {
+    width: 600px;
+    position: relative;
+    left: -10px;
+  }
+nav .links ul li a{
+    text-wrap: nowrap;
+    font-size: 12px;
+  }
+  nav .btn{
+    font-weight: 100px;
+    width: 80px;
+    text-wrap: nowrap;
+    position: relative;
+    left: -10px;
+  }
+  .content {
+    position: relative;
+    left: -130px;
+    max-width: 600px;
+  }
+  .page2 .container .sec1{
+    display: block;
+    text-align: center;
+  }
+  .page2 .container .sec1 h2{
+    width: 650px;
+    text-align: center;
+    font-size:39px ;
+    margin-bottom: 10px;
+    margin-left: 80px;
+  }
+  .page2 .images{
+    width: 800px;
+    margin-left: 30px;
+  }
+  .page2 .images img{
+    margin-right: 15px;
+    margin-left: 25px;
+  }
+  .page2 .container .sec2{
+    display: block;
+  }
+  .page2 .sec2 .part1{
+    margin-left: 10px;
+  }
+  .page2 .sec2 .part1 h2{
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-right: 30px;
+  }
+  .page2 .sec2 .part2{
+    float: right;
+    margin-top: -65px;
+    margin-right: 50px;
+  }
+  .page2 .sec2 .part2 .text{
+    text-wrap: wrap;    
+  }
+  .page2 .sec2 .part3{
+    margin-top: 50px;
+    margin-left: 65px;
+  }
+  .page2 .cards{
+    margin-left: 9px;
+  }
+  .page2 .cards .card{
+    max-width: 270px;
+    height: 430px;
+  }
+  .page2 .cards .card img ,  .cards .card button , .progress-bar{
+    max-width:250px;
+  }
+  .page2 .cards .card h2{
+    font-size: 20px;
+  }
+  .progress-bar p{
+    font-size: 12px;
+  }
+  .page3 .container{
+    margin-left: -30px;
+    margin-right: 0;
+  }
+  .page3 .section{
+    margin-right: 2px;
+  }
+  .page3 .section p{
+    font-size: 13px;
+  }
+  .page3 .lastSection{
+    width: 420px;
+  }
+  .lastSection h2{
+    font-size: 19px;
+    margin-top: 7px;
+  }
+  .page4 .container , .page5 .container{
+    margin-left: -30px;
+  }
+  .page4 .part1 p{
+    max-width:360px;
+  }
+  .page5 .Rpart{
+    margin-left: 110px;
+    text-wrap: nowrap;
+  }
+  .cards .firstTwoCard , .cards .secTwoCard{
+    margin-left: -18px;
+  }
+  .page5 .Lpart h2{
+    font-size: 35px;
+  }
+  .cards .firstTwoCard .card1 , .firstTwoCard .card2 , .secTwoCard .card1 , .secTwoCard .card2{
+    max-width: 400px;
+    height: 230px;
+  }
+  footer .container{
+    margin-left: -30px;
+    height: 350px;
+  }
+  footer .sec1{
+    max-width: 350px;
+    text-wrap: wrap;
+  }
+  footer .sec1{
+    width: 370px;
+  }
+  footer .sec3{
+    margin-right: 10px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+
+}
+
+@media(min-width: 750px) and ( max-width:885px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  nav{
+    width: 50%;
+  }
+  .logo{
+    position: relative;
+    left: 150px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: -130px;
+    margin-left: -20px;
+  }
+  .page1 .content{
+    margin-left: -100px;
+  }
+  .page2 .container .sec1{
+    display: block;
+    text-align: center;
+    margin-left: -50px;
+  }
+  .page2 .container .sec1 h2{
+    width: 650px;
+    text-align: center;
+    font-size:33px ;
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
+  .page2 .images{
+    width: 800px;
+    margin-left: -60px;
+  }
+  .page2 .images img{
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .page2 .container .sec2{
+    display: block;
+  }
+  .page2 .sec2 .part1{
+    margin-left: -55px;
+  }
+  .page2 .sec2 .part1 h2{
+    font-size: 30px;
+    margin-right: 30px;
+  }
+  .page2 .sec2 .part2{
+    float: right;
+    margin-top: -65px;
+    margin-right: -55px;
+    width: 400px;
+  }
+  .page2 .sec2 .part2 .text{
+    font-size: 15px;   
+  }
+  .page2 .sec2 .part3{
+    margin-top: 50px;
+    margin-left: -5px;
+  }
+  .page2 .cards{
+    margin-left: -87px;
+    margin-right:100px;
+  }
+  .page2 .cards .card{
+    width: 230px;
+    height: 420px;
+    margin-right: 15px;
+  }
+  .page2 .cards .card img ,  .cards .card button , .progress-bar{
+    width:210px;
+  }
+  .page2 .cards .card h2{
+    font-size: 15px;
+  }
+  .progress-bar p{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  /* page3 */
+  .page3 , .page3 .main2{
+    height: 88vh;
+  }
+  .page3 .container{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .page3 .section{
+    margin-bottom: -50px;
+  }
+  .page3 .section:first-of-type{
+    margin-left: 0px;
+  }
+  .page3 .section h2{
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .page3 .section p{
+    font-size: 13px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .page3 .lastSection{
+    position: relative;
+    margin-top: 85px;
+    left: 100px;
+    height: 32.7vh;
+    max-width: 450px;
+  }
+  .lastSection p{
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  .lastSection h2{
+    font-size: 19px;
+    margin-top: 20px;
+  }
+  .page4 .container , .page5 .container{
+    margin-left: -20px;
+  }
+  .page4 .part1 p{
+    max-width:300px;
+  }
+  .page5 .container .Lpart h2{
+    font-size: 30px;
+    width: 350px;
+  }
+  .page5 .Rpart{
+    margin-left: 100px;
+    text-wrap: nowrap;
+  }
+  .cards .firstTwoCard , .cards .secTwoCard{
+    margin-left: -135px;
+  }
+  .cards .firstTwoCard .card1 , .firstTwoCard .card2 , .secTwoCard .card1 , .secTwoCard .card2{
+    max-width: 335px;
+    height: 235px;
+  }
+  footer .container{
+    margin-left: -30px;
+    height: 300px;
+  }
+  footer .sec1{
+    max-width: 300px;
+    text-wrap: wrap;
+  }
+  footer .sec2 , footer .sec3 , footer .sec1{
+    margin-right: 70px;
+  }
+  footer .sec2 .links{
+    text-wrap: nowrap;
+  }
+  footer .sec2 h3 , footer .sec3 h3{
+    font-size: 16px;
+    text-wrap: nowrap;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 600px) and ( max-width:750px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 90px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 100px;
+  }
+  .page1 .content{
+    margin-left: -120px;
+  }
+  .page1 .content h1{
+    font-size: 40px;
+    width: 100%;
+  }
+  .page1 .content .last p{
+    font-size:15px;
+  }
+  .page2 .container .sec1{
+    display: block;
+    text-align: center;
+    margin-left: -50px;
+  }
+  .page2 .container .sec1 h2{
+    width: 650px;
+    text-align: center;
+    font-size:30px ;
+    margin-bottom: 10px;
+    margin-left: -70px;
+  }
+  .page2 .images{
+    width: 800px;
+    margin-left: -60px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:9px; 
+    width: 100%;
+    margin-left: 40px;
+  }
+  .page2 .images img{
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .page2 .container .sec2{
+    display:flex;
+    flex-direction: column;
+  }
+  .page2 .sec2 .part1{
+    margin-left: -55px;
+  }
+  .page2 .sec2 .part1 h2{
+    font-size: 30px;
+    margin-right: 30px;
+  }
+  .page2 .sec2 .part2{
+    float: right;
+    margin-top: 20px;
+    margin-right: -55px;
+    max-width: 100%;
+  }
+  .page2 .sec2 .part2 .text{
+    font-size: 13px;   
+  }
+  .page2 .sec2 .part3{
+    margin-top: 30px;
+    margin-left: -5px;
+  }
+  .page2 .cards{
+    margin-left: -10px;
+    margin-right:50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page2 .cards .card{
+    width: 460px;
+    height: 430px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  .page2 .cards .card img , .page2 .cards .card button , .progress-bar{
+    width:440px;
+    margin-right: 10px;
+  }
+  .page2 .cards .card h2{
+    font-size: 26px;
+  }
+  .progress-bar p{
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 330px;
+  }
+  /* page3 */
+  .page3 , .page3 .main2{
+    height: 88vh;
+  }
+  .page3 .container{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .page3 .section{
+    margin-bottom: -50px;
+  }
+  .page3 .section:first-of-type{
+    margin-left: 0px;
+  }
+  .page3 .section h2{
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .page3 .section p{
+    font-size: 13px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .page3 .lastSection{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    height: 26vh;
+    max-width: 450px;
+  }
+  .lastSection p{
+    font-size: 12px;
+  }
+  .lastSection h2{
+    font-size: 19px;
+    margin-top: 15px;
+  }
+  .page4 .container , .page5 .container{
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page4 .part1{
+    max-width:100%;
+    margin-bottom: 30px;
+  }
+  .page4 .part1 .lorem{
+    font-size: 15px;
+  }
+  .page4 .part2 , .page5 .container .Rpart{
+    margin-left: 40px;
+  }
+  .page5 .container .Lpart h2{
+    font-size: 30px;
+    width: 100%;
+  }
+  .cards .container .firstTwoCard .sec1 , .secTwoCard .sec2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards .container .firstTwoCard .card1 {
+    margin-left: -120px;
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+  .cards .container .firstTwoCard .card2{
+    margin-left: -120px !important;
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+  .cards .secTwoCard .card1{
+    margin-left: -120px;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: -90px;
+  }
+  .cards .secTwoCard .card2{
+    max-width: 100%;
+    position: relative;
+    left: -120px;
+  }
+  .emailAddress h2{
+    font-size: 35px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: 60px;
+  }
+  footer .sec1 p{
+    max-width: 90%;
+    margin-left: -50px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: 100px;
+  }
+  footer .sec2{
+    margin-bottom: 30px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 130px;
+  }
+  footer .sec2 .links{
+    margin-left: 120px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 150px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: 70px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 135px;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 500px) and ( max-width:600px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 150px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 150px;
+  }
+  .page1 .content{
+    margin-left: -120px;
+  }
+  .page1 .content h1{
+    font-size: 30px;
+    width: 100%;
+  }
+  .page1 .content .last p{
+    font-size:13px;
+  }
+  .page2 .container .sec1{
+    display: block;
+    text-align: center;
+    margin-left: -50px;
+  }
+  .page2 .container .sec1 h2{
+    width: 650px;
+    text-align: center;
+    font-size:28px ;
+    margin-bottom: 10px;
+    margin-left: -110px;
+  }
+  .page2 .images{
+    width: 800px;
+    margin-left: -80px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap:9px; 
+    width: 100%;
+    margin-left: 40px;
+  }
+  .page2 .images img{
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .page2 .container .sec2{
+    display:flex;
+    flex-direction: column;
+  }
+  .page2 .sec2 .part1{
+    margin-left: -55px;
+  }
+  .page2 .sec2 .part1 h2{
+    font-size: 30px;
+    margin-right: 30px;
+  }
+  .page2 .sec2 .part2{
+    float: right;
+    margin-top: 20px;
+    margin-right: -55px;
+    max-width: 100%;
+  }
+  .page2 .sec2 .part2 .text{
+    font-size: 13px;  
+    max-width:70vh; 
+  }
+  .page2 .sec2 .part3{
+    margin-top: 30px;
+    margin-left: -5px;
+  }
+  .page2 .cards{
+    margin-left: -70px;
+    margin-right:50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page2 .cards .card{
+    width: 420px;
+    height: 430px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  .page2 .cards .card img , .page2 .cards .card button , .progress-bar{
+    width:400px;
+    margin-right: 10px;
+  }
+  .page2 .cards .card h2{
+    font-size: 26px;
+  }
+  .progress-bar p{
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 300px;
+  }
+  /* page3 */
+  .page3 , .page3 .main2{
+    height: 88vh;
+  }
+  .page3 .container{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .page3 .section{
+    margin-bottom: -50px;
+  }
+  .page3 .section:first-of-type{
+    margin-left: 0px;
+  }
+  .page3 .section h2{
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .page3 .section p{
+    font-size: 13px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .page3 .lastSection{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    height: 26vh;
+    max-width: 450px;
+  }
+  .lastSection p{
+    font-size: 12px;
+  }
+  .lastSection h2{
+    font-size: 19px;
+    margin-top: 15px;
+  }
+  .page4 .container , .page5 .container{
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page4 .part1{
+    max-width:100%;
+    margin-bottom: 30px;
+  }
+  .page4 .part1 .lorem{
+    font-size: 15px;
+  }
+  .page4 .part2 , .page5 .container .Rpart{
+    margin-left: 40px;
+  }
+  .page5 .container .Lpart h2{
+    font-size: 30px;
+    width: 100%;
+  }
+  .cards .container .firstTwoCard .sec1 , .secTwoCard .sec2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards .container .firstTwoCard .card1 {
+    margin-left: -130px;
+    width: 450px;
+    margin-bottom: 80px;
+  }
+  .cards .container .firstTwoCard .card2{
+    margin-left: -130px !important;
+    width: 450px;
+    margin-bottom: 80px;
+  }
+  .cards .secTwoCard .card1{
+    margin-left: -130px;
+    width: 450px;
+    margin-bottom: 80px;
+    margin-top: -90px;
+  }
+  .cards .secTwoCard .card2{
+    width: 450px;
+    position: relative;
+    left: -130px;
+  }
+  .emailAddress h2{
+    font-size: 35px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -50px;
+  }
+  footer .sec1 p{
+    max-width: 77%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: 40px;
+  }
+  footer .sec2{
+    margin-bottom: 30px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 80px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: -10px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 60px;
+  }
+  footer hr{
+    margin-top: 15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+  }
+  footer .finish{
+    margin-top: 30px;
+  }
+}
+@media(min-width: 400px) and ( max-width:500px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 190px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 200px;
+  }
+  .page1 .content{
+    margin-left: -130px;
+  }
+  .page1 .content h1{
+    font-size: 25px;
+    width: 100%;
+  }
+  .page1 .content .last p{
+    font-size:12px;
+  }
+  .page2 .container .sec1{
+    display: block;
+    text-align: center;
+    margin-left: -80px;
+  }
+  .page2 .container .sec1 h2{
+    width: 650px;
+    text-align: center;
+    font-size:20px ;
+    margin-bottom: 10px;
+    margin-left: -170px;
+  }
+  .page2 .images{
+    width: 800px;
+    margin-left: -80px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap:9px; 
+    width: 100%;
+    margin-left: 10px;
+  }
+  .page2 .images img{
+    margin-right: 10px;
+    margin-left: 15px;
+    width: 45px;
+  }
+  .page2 .container .sec2{
+    display:flex;
+    flex-direction: column;
+  }
+  .page2 .sec2 .part1{
+    margin-left: -55px;
+  }
+  .page2 .sec2 .part1 h2{
+    font-size: 25px;
+    margin-left: -20px;
+  }
+  .page2 .sec2 .part2{
+    float: right;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .page2 .sec2 .part2 .text{
+    font-size: 13px;  
+  }
+  .page2 .sec2 .part3{
+    margin-top: 30px;
+    margin-left: -5px;
+  }
+  .page2 .cards{
+    margin-left: -85px;
+    margin-right:50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page2 .cards .card{
+    width: 350px;
+    height: 430px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  .page2 .cards .card img , .page2 .cards .card button , .progress-bar{
+    width:330px;
+    margin-right: 10px;
+  }
+  .page2 .cards .card h2{
+    font-size: 26px;
+  }
+  .progress-bar p{
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 220px;
+  }
+  /* page3 */
+  .page3 , .page3 .main2{
+    height: 88vh;
+  }
+  .page3 .container{
+    margin-top: -55px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .page3 .section{
+    margin-bottom: -50px;
+  }
+  .page3 .section:first-of-type{
+    margin-left: 0px;
+  }
+  .page3 .section h2{
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .page3 .section p{
+    font-size: 13px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .page3 .lastSection{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    height: 26vh;
+    max-width: 450px;
+  }
+  .lastSection p{
+    font-size: 12px;
+  }
+  .lastSection h2{
+    font-size: 19px;
+    margin-top: 15px;
+  }
+  .page4 .container , .page5 .container{
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page4 .part1{
+    max-width:100%;
+    margin-bottom: 30px;
+  }
+  .page4 .part1 h2{
+    font-size: 30px;
+  }
+  .page4 .part1 .lorem{
+    font-size: 13px;
+    max-width:300px ;
+  }
+  .page4 .part2 , .page5 .container .Rpart{
+    margin-left: 40px;
+  }
+  .page5 .container .Lpart h2{
+    font-size: 30px;
+  }
+  .cards .container .firstTwoCard .sec1 , .secTwoCard .sec2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards .container .firstTwoCard .card1 {
+    margin-left: -135px;
+    width: 360px;
+    margin-bottom: 80px;
+    height: 220px;
+  }
+  .cards .container .firstTwoCard .card2{
+    margin-left: -135px !important;
+    width: 360px;
+    margin-bottom: 80px;
+    height: 220px;
+  }
+  .cards .secTwoCard .card1{
+    margin-left: -135px;
+    width: 360px;
+    margin-bottom: 80px;
+    margin-top: -90px;
+    height: 220px;
+  }
+  .cards .secTwoCard .card2{
+    width: 360px;
+    position: relative;
+    left: -135px;
+    height: 220px;
+  }
+  .emailAddress h2{
+    font-size: 20px;
+  }
+  .emailAddress p{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .emailAddress button{
+    margin-top: 6px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -50px;
+    width: 160px;
+  }
+  footer .sec1 p{
+    max-width: 77%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: -10px;
+  }
+  footer .sec2 , footer .sec3{
+    margin-bottom: 30px;
+    margin-left: -40px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 16px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 80px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: -10px;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 60px;
+  }
+  footer hr{
+    margin-top: -15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 10px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 10px
+  }
+  footer .finish{
+    margin-top: 20px;
+  }
+}
+@media(min-width: 300px) and ( max-width:400px){
+  nav .links ,nav button{
+    visibility: hidden;
+  }
+  .logo{
+    position: relative;
+    left: 240px;
+    margin-left: 20px;
+  }
+  .navbar i{
+    display: block;
+    color: var(--main-color);
+    font-size: 23px;
+    margin-top: 15px;
+    background-color: var(--second-color);
+    padding: 10px;
+    position: relative;
+    right: 250px;
+  }
+  .page1 .content{
+    margin-left: -130px;
+  }
+  .page1 .content h1{
+    font-size: 20px;
+    width: 100%;
+  }
+  .page1 .content .last button{
+    width: 100px;
+    font-size: 10px;
+  }
+  .page1 .content .last .AllCourses i {
+    font-size: 6px;
+    margin-left: -20px;
+  }
+  .page1 .content .last .AllCourses span{
+    font-size: 9px;
+  }
+  .page1 .content .last p{
+    font-size:10px;
+  }
+  .page2 .container .sec1{
+    display: block;
+    text-align: center;
+    margin-left: -80px;
+  }
+  .page2 .container .sec1 h2{
+    width: 650px;
+    text-align: center;
+    font-size:15px ;
+    margin-bottom: 10px;
+    margin-left: -200px;
+  }
+  .page2 .images{
+    width: 800px;
+    margin-left: -80px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap:9px; 
+    width: 100%;
+    margin-left: -5px;
+  }
+  .page2 .images img{
+    margin-right: 10px;
+    margin-left: 15px;
+    width: 30px;
+  }
+  .page2 .container .sec2{
+    display:flex;
+    flex-direction: column;
+  }
+  .page2 .sec2 .part1{
+    margin-left: -55px;
+  }
+  .page2 .sec2 .part1 p{
+    font-size: 12px;
+  }
+  .page2 .sec2 .part1 h2{
+    font-size: 20px;
+    margin-left: -25px;
+  }
+  .page2 .sec2 .part2{
+    float: right;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .page2 .sec2 .part2 .text{
+    font-size: 13px;
+    width: 35dvh;  
+  }
+  .page2 .sec2 .part3{
+    margin-top: 30px;
+    margin-left: -5px;
+  }
+  .page2 .sec2 .part3 button{
+    width: 200px;
+  }
+  .page2 .cards{
+    margin-left: -90px;
+    margin-right:50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page2 .cards .card{
+    width: 260px;
+    height: 430px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  .page2 .cards .card img , .page2 .cards .card button , .progress-bar{
+    width:240px;
+    margin-right: 10px;
+  }
+  .page2 .cards .card h2{
+    font-size: 19px;
+  }
+  .progress-bar p{
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 130px;
+  }
+  /* page3 */
+  .page3 , .page3 .main2{
+    height: 88vh;
+  }
+  .page3 .container{
+    margin-top: -65px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .page3 .section{
+    margin-bottom: -70px;
+  }
+  .page3 .section:first-of-type{
+    margin-left: 0px;
+  }
+  .page3 .section h2{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .page3 .section p{
+    font-size: 11px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .page3 .lastSection{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    height: 37vh;
+    max-width: 450px;
+  }
+  .lastSection p{
+    font-size: 12px;
+  }
+  .lastSection h2{
+    font-size: 19px;
+    margin-top: 15px;
+  }
+  .page4 .container , .page5 .container{
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page4 .part1{
+    max-width:100%;
+    margin-bottom: 30px;
+  }
+  .page4 .part1 h2{
+    font-size: 25px;
+  }
+  .page4 .part1 .lorem{
+    font-size: 11px;
+    width:220px ;
+  }
+  .page4 .part2 , .page5 .container .Rpart{
+    margin-left: 40px;
+  }
+  .page5 .container .Lpart h2{
+    font-size: 25px;
+    width: 250px;
+  }
+  .cards .container .firstTwoCard .sec1 , .secTwoCard .sec2{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards .container .firstTwoCard .card1 {
+    margin-left: -140px;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 80px;
+  }
+  .cards .container .firstTwoCard .card2{
+    margin-left: -135px !important;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 80px;
+  }
+  .cards .secTwoCard .card1{
+    margin-left: -135px;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 80px;
+    margin-top: -90px;
+  }
+  .cards .secTwoCard .card2{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    left: -135px;
+  }
+  .emailAddress h2{
+    font-size: 18px;
+  }
+  .emailAddress p{
+    font-size: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .emailAddress input{
+    width: 200px;
+  }
+  .emailAddress button{
+    margin-top: 10px;
+    width: 100px;
+    font-size: 10px;
+  }
+  footer{
+    height:750px;
+  }
+  footer .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sec1{
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .sec1 img{
+    margin-left: -70px;
+    width: 140px;
+  }
+  footer .sec1 p{
+    max-width: 70%;
+    margin-left: -100px;
+    font-size: 13px;
+  }
+  footer .sec1 a:first-of-type{
+    margin-left: -40px;
+  }
+  footer .sec2 , footer .sec3{
+    margin-bottom: 25px;
+    margin-left: -85px;
+  }
+  footer .sec2 h3, footer .sec3 h3{
+    margin-left: 60px;
+  }
+  footer .sec2 .links{
+    margin-left: 50px;
+  }
+  footer .sec2 .links a{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  footer .sec3 .address , footer .sec3 .phone , footer .sec3 .email{
+    margin-left: 100px;
+  }
+  footer .sec3 .addinfo{
+    margin-left: 20px;
+    font-size: 12px !important;
+  } 
+  footer .sec3 .phoneinfo , footer .sec3 .emailinfo{
+    margin-left: 85px;
+    font-size: 12px !important;
+  }
+  footer hr{
+    margin-top: -15px;
+  }
+  footer .finish span:first-of-type{
+    margin-left:-120px ;
+    font-size: 8px;
+  }
+  footer .finish span:last-of-type{
+    margin-right: -110px;
+    font-size: 8px
+  }
+  footer .finish{
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

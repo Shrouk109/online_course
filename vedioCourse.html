@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>vedio course</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Katibeh&family=Reem+Kufi:wght@700&display=swap"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/vedioCourse.css">
+  </head>
+
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check" id="btn">&#9776;</label>
+    <label for="check" id="close"> <i class="fas fa-angle-left"></i></label>
+
+    <nav class="navbar">
+      <img src="images/cropped-favicon.png" alt="logo">
+      <a href="#" class="next_lesson"><span>Next Lesson</span> <i class="fa-solid fa-angle-right"></i></a>
+      <!-- <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fa-solid fa-angle-left" id="close"></i>
+      </label> -->
+    </nav>
+    
+    <div class="sidebar">
+      <header>
+        <a href="course_details.html" class="name-course"><i class="fa-regular fa-file-lines"></i> <span>HTML5/CSS3
+            Essentials</span></a>
+      </header>
+      <div class="content">
+        <a href="#" class="name1"><i class="fa-regular fa-circle"></i> <span>
+            Introduction to HTML</span></a><br>
+        <a href="#" class="numTopic"><i class="fa-solid fa-angle-down"></i> 2 Topics</a>
+      </div>
+      <div class="content">
+        <a href="#" class="name2"><i class="fa-regular fa-circle"></i> <span>
+            Introduction and Basics of CSS</span></a><br>
+        <a href="#" class="numTopic"><i class="fa-solid fa-angle-down"></i> 2 Topics</a>
+      </div>
+    </div>
+    <!-- content -->
+    <section class="main">
+      <div class="container">
+        <h1>Introduction to HTML</h1>
+        <div class="name_vedio">
+          <span><a href="#">HTML5/CSS3 Essentials</a></span>
+          <i class="fas fa-angle-right"></i>
+          <span><a href="#">Introduction to HTML</a></span>
+        </div>
+        <iframe
+          src="https://www.youtube.com/embed/HJRzUQMhJMQ?iv_load_policy=3&modestbranding=1&playinline=1&showinfo=0&rel=0&enablejsapi=1">
+        </iframe>
+        <p class="line">Nulla et ligula sit amet mauris pharetra semper et ut neque. Vivamus pretium diam id neque
+          convallis viverra.Nullam rutrum lacus vel leo fermentum, non aliquam nisl mollis. Praesent dapibus justo ac
+          suscipit imperdiet.</p>
+        <p class="line">Sed bibendum velit in elementum pulvinar. Praesent massa dui, faucibus ut ipsum eu, feugiat
+          pretium tellus. Vestibulum pretium eros non lectus egestas, non facilisis felis blandit. Ut congue nunc sit
+          amet erat aliquam, sit amet ornare nunc blandit.</p>
+        <p class="line">Nullam lacinia lacus ac neque iaculis, et ultrices nisl sagittis. Vivamus at ultrices neque, ac
+          interdum ante. Maecenas est dolor, fermentum vel pulvinar ac, bibendum non elit.</p>
+        <p class="line">Duis rutrum maximus lectus, fringilla tristique nibh iaculis ut. Maecenas varius iaculis erat,
+          sed pellentesque lacus malesuada nec. Aenean iaculis, mi non interdum pulvinar, dolor dui tempor magna, quis
+          aliquam ipsum justo eu lectus. Donec porta eros sed leo vestibulum, in lacinia libero fringilla.</p>
+        <div class="lesson-content">
+          <p class="header"><i class="fa-regular fa-file-lines"></i> Lesson Contnet <span>0% COMPLETE</span></p>
+          <p class="cont1"><i class="fa-regular fa-circle"></i> <a href="">HTML Elements</a></p>
+          <p class="cont2"><i class="fa-regular fa-circle"></i> <a href="">HTML Attributes</a></p>
+        </div>
+        <hr>
+        <div class="last">
+          <span class="back"><a href="course_details.html">Back to Course</a></span>
+          <button class="next"><a href="#">Next Lesson <i class="fas fa-angle-right"></i></a></button>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
